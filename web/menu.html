@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<title>Menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Karma", sans-serif
+    }
+    
+    .w3-bar-block .w3-bar-item {
+        padding: 20px
+    }
+</style>
+<link rel="stylesheet" href="temp.css">
+<link type="text/javascript" src="scripts.js">
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+            <a href="#home" class="w3-bar-item w3-button">Food Ordering</a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <div class="search-container">
+                    <a class="fa fa-shopping-cart w3-bar-item w3-button"></a>
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-small">
+            <button class="w3-bar-item w3-button w3-black tablink" onclick="openFood(event,'maindishes')">Main Dishes</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openFood(event,'dessert')">Dessert</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openFood(event,'beverage')">Beverage</button>
+        </div>
+
+        <!-- Main Dishes -->
+        <div id="maindishes" class="food w3-animate-top">
+            <div class="w3-row-padding w3-padding-16 w3-center">
+                <div class="w3-quarter">
+                    <img src="images/Main Dishes/1.jpg" alt="Sandwich" style="width:100%">
+                    <h3>Sandwich</h3>
+                    <p>$35</p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="images/Main Dishes/2.jpg" alt="French Fried" style="width:100%">
+                    <h3>French Fried</h3>
+                    <p>$35</p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="images/Main Dishes/3.jpg" alt="Taco" style="width:100%">
+                    <h3>Taco</h3>
+                    <p>$35</p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="images/Main Dishes/4.jpg" alt="Fried Chicken" style="width:100%">
+                    <h3>Fried Chicken</h3>
+                    <p>$35</p>
+                </div>
+            </div>
+            <div class="w3-row-padding w3-padding-16 w3-center">
+                <div class="w3-quarter">
+                    <img src="images/Main Dishes/7.jpg" alt="Pizza" style="width:100%">
+                    <h3>Pizza</h3>
+                    <p>$35</p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="images/Main Dishes/6.jpg" alt="Burger" style="width:100%">
+                    <h3>Burger</h3>
+                    <p>$35</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dessert -->
+        <div class="food w3-animate-top" id="dessert" style="display:none">
+            <div class="w3-row-padding w3-padding-16 w3-center">
+                <div class="w3-quarter">
+                    <img src="images/Dessert/1.jpg" alt="1" style="width:100%">
+                    <h3>Chocolate Cupcake</h3>
+                    <p>$20</p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="images/Dessert/2.jpg" alt="2" style="width:100%">
+                    <h3>Blueberry Cake</h3>
+                    <p>$20</p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="images/Dessert/3.jpg" alt="3" style="width:100%">
+                    <h3>Orange Cake</h3>
+                    <p>$20</p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="images/Dessert/4.jpg" alt="4" style="width:100%">
+                    <h3>Cupcake</h3>
+                    <p>$20</p>
+                </div>
+            </div>
+            <div class="w3-row-padding w3-padding-16 w3-center">
+                <div class="w3-quarter">
+                    <img src="images/Dessert/5.jpg" alt="5" style="width:100%">
+                    <h3>Icream</h3>
+                    <p>$20</p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="images/Dessert/6.jpg" alt="6" style="width:100%">
+                    <h3>Crossaint</h3>
+                    <p>$20</p>
+                </div>
+            </div>
+        </div>
+        <!-- Beverage -->
+        <div class="food w3-animate-top" id="beverage" style="display:none">
+            <div class="w3-row-padding w3-padding-16 w3-center">
+                <div class="w3-quarter">
+                    <img src="images/Beverage/1.jpg" alt="1" style="width:100%">
+                    <h3>Smoothies</h3>
+                    <p>$15</p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="images/Beverage/2.jpg" alt="2" style="width:100%">
+                    <h3>Soda</h3>
+                    <p>$15</p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="images/Beverage/3.jpg" alt="3" style="width:100%">
+                    <h3>Soft Drink</h3>
+                    <p>$15</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scripts.js"></script>
+
+    </div>
+    <!-- Footer -->
+    <footer class="w3-container w3-black w3-center w3-margin-top" id="contact">
+        <p>Find us on social media.</p>
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p>Have a good meal.</p>
+    </footer>
+
+
+</body>
+
+</html>
