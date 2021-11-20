@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Responsive Navbar</title>
+    <title>Menu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -218,17 +218,17 @@
     <div class="container-fluid p-0" style="background: url(bg.jpg) no-repeat;
   background-size: cover;
   height: calc(100vh);">
-        <p style="font-size: 240%;font-weight: bold;margin-left: 140px;position: absolute;margin-top: 110px;">Choose your food here!</p>
-        <p style="margin-left: 140px;position: absolute;margin-top: 200px;">Fresh and new ingredients everyday. </p>
-        <button style="margin-left: 140px;position: absolute;margin-top: 250px;background: #fb9200;padding: 10px;border: 0;border-radius: 30px;color: #fff;padding-left: 30px;padding-right: 30px;-webkit-box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);
+        <p style="font-size: 240%;font-weight: bold;margin-left: 140px;position: absolute;margin-top: 110px;">Thoải mái lựa chọn<br> món ăn yêu thích.</p>
+        <p style="margin-left: 140px;position: absolute;margin-top: 250px;">Nguyên liệu tươi ngon và được chuẩn bị kỹ càng hàng ngày! </p>
+        <a href="#list_food_home" style="margin-left: 140px;position: absolute;margin-top: 300px;background: #fb9200;padding: 10px;border: 0;border-radius: 30px;color: #fff;padding-left: 30px;padding-right: 30px;-webkit-box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);
 -moz-box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);
-box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);">Order now!</button>
+box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);">Đặt hàng ngay bây giờ!</a>
         <nav id="menu" style="position: fixed;z-index: 999;">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
-            <label class="logo">Restaurant</label>
+            <label class="logo">Food Ordering</label>
             <ul>
 
                 <li><a onclick="home_page()" href="homepage.html" class="active text-white">Home</a></li>
@@ -307,15 +307,15 @@ box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);">Order now!</button>
     <div class="modal fade bd-example-modal-sm33 mt-5" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel33" aria-hidden="true">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
-                <div class="iconpopup " style="margin: 0 auto; width: 27%;height: 100%; margin-top: 20%;">
-                    <img id="notick" src="tick.png" width="100%">
+                <div class="iconpopup " style="margin: 0 auto; width: 27%;height: 60%; margin-top: 20%;">
+                    <img id="notick" src="tick.png" width="100%" style="display: none;">
                     <img id="errortick" src="ticknot.png" width="100%" style="display: none;">
                     <img id="changeimg" src="defender.png" width="100%" style="display: none;">
                 </div>
 
                 <div id="changepass" class=" iconpopup mt-4" style="margin: 0 auto; width: 80%;margin-bottom: 10%;">
                     <p class="text-center mb-3" style="font-weight: bold;margin-bottom: 2%;font-size: 120%">Đổi mật khẩu</p>
-                    <p class="mt-3" style="margin-bottom: 2%;">Nhập mật khảu củ</p>
+                    <p class="mt-3" style="margin-bottom: 2%;">Nhập mật khảu cũ</p>
                     <input type="password" name="pass" id="passcurrent" class="form-control ">
                     <p class="mt-1" style="margin-bottom: 2%;">Nhập mật khẩu mới</p>
                     <input type="password" name="pass" id="passnew" class="form-control ">
@@ -419,7 +419,7 @@ box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);">Order now!</button>
                             <label class="mt-3 font-weight-bold">Nhập lại mật khẩu</label>
                             <input id="RepasswordSignup" type="password" class="form-control" aria-describedby="emailHelp" placeholder="Nhập lại mật khẩu">
                             <button onclick="Signup()" class="btn btn-primary mt-4" style="width: 100%;background: #fb9200;border: 0;outline: none;">
-    Đăng nhập</button>
+    Đăng ký</button>
                             <p id="statusSignup" class="text-center mt-3 mb-1" style="font-size: 90%;color: red;"></p>
                             <p onclick="move_login()" class="text-center mt-0" style="font-size: 90%">Bạn đã có tài khoản, Đăng nhập<strong style="color:#fb9200 "> tại đây</strong> </p>
                         </div>
@@ -442,14 +442,14 @@ box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);">Order now!</button>
 
 
                 <div id="checkout_form" class="cart_box pl-5 pt-4 shadow-sm mt-3 pb-4" style="width: 100%;margin: auto;">
-                    <p class="ml-2" style="font-size: 130%;font-weight: bold;">Giỏ hàng của bạn</p>
+                    <p class="ml-2" style="font-size: 130%;font-weight: bold;">Giỏ hàng</p>
                     <div data-spy="scroll" data-target="#myScrollspy" data-offset="10" style="height:340px;overflow-y: scroll;padding-top: 5px;padding-right: 10px;">
                         <table class="table table-borderless">
                             <thead>
                                 <tr>
                                     <th scope="col" style="width: 40%;font-size: 115%;">Sản phẩm</th>
                                     <th scope="col" style="width: 20%;font-size: 115%;" class="text-center">Số lượng</th>
-                                    <th scope="col" style="width: 20%;font-size: 115%;" class="text-center">Gía tiền</th>
+                                    <th scope="col" style="width: 20%;font-size: 115%;" class="text-center">Giá tiền</th>
                                     <th scope="col" style="width: 20%;font-size: 115%;" class="text-center">Thao tác</th>
                                 </tr>
                             </thead>
@@ -512,12 +512,6 @@ box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);">Order now!</button>
             </div>
         </div>
     </div>
-
-
-
-
-
-
 
     <div id="list_food_home" class="container">
         <div class="row" id="prinf_food">
@@ -647,16 +641,9 @@ box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);">Order now!</button>
 
 
 
-
-
-
-
-
     <script type="text/javascript">
         // var id_order_food = 0;
         // localStorage.setItem("id_order_food", JSON.stringify(id_order_food));
-
-        // 
 
 
 
@@ -691,7 +678,7 @@ box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);">Order now!</button>
         var idup = JSON.parse(localStorage.getItem('idup'));
         if (idup === null) {
             idup = [];
-            var idup = 3;
+            var idup = 1;
             localStorage.setItem("idup", JSON.stringify(idup));
         }
 
@@ -711,8 +698,7 @@ box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);">Order now!</button>
 
 
 
-
-        // 
+        //localStorage.clear();
         var account = JSON.parse(localStorage.getItem('account'));
         if (account === null) {
             account = [];
@@ -721,16 +707,6 @@ box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);">Order now!</button>
                 username: "admin",
                 password: "123456",
                 level: 1
-            }, {
-                id: 1,
-                username: "b",
-                password: "b",
-                level: 0
-            }, {
-                id: 2,
-                username: "a",
-                password: "a",
-                level: 0
             }];
             localStorage.setItem("account", JSON.stringify(account));
         }
@@ -757,34 +733,64 @@ box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);">Order now!</button>
                 image: "image/foody-upload-api-foody-mobile-vqy-jpg-180827105031.jpg"
             }, {
                 id: 3,
-                name: "Shushi cá hồi",
+                name: "Sushi cá hồi",
                 price: "90000",
                 note: "Cá hồi và một ít hải sản khác",
                 image: "image/foody-mobile-10399619_81147453229-527-635863817212109582.jpg"
             }, {
                 id: 4,
-                name: "Bún đậu",
-                price: "50000",
-                note: "Bún đậu ăn với mắm tôm và rau",
+                name: "Lẩu Thái",
+                price: "100000",
+                note: "Bún tươi và hải sản",
                 image: "image/foody-upload-api-foody-mobile-10-200317093749.jpg"
             }, {
                 id: 5,
                 name: "Tôm chiên bột",
                 price: "60000",
-                note: "Không phân biệt là đông hay hè ",
+                note: "Không phân biệt là đông hay hè",
                 image: "image/foody-upload-api-foody-mobile-anh-banner-190829105555.jpg"
             }, {
                 id: 6,
                 name: "Cua hoàng đế",
                 price: "300000",
-                note: "Không phân biệt là đông hay hè, quán Xuýt ",
+                note: "Cua hoàng đế sốt bơ tỏi",
                 image: "image/foody-upload-api-foody-mobile-canadian-lobster-res-180711100420.jpg"
             }, {
                 id: 7,
-                name: "Dê nướng BBQ",
-                price: "25000",
-                note: "Không phân biệt là đông hay hè, quán Xuýt ",
+                name: "Dê nướng",
+                price: "250000",
+                note: "Công thức nướng BBQ độc quyền của quán",
                 image: "image/foody-upload-api-foody-mobile-ddh-200214084711.jpg"
+            }, {
+                id: 8,
+                name: "Bò Beefsteak",
+                price: "150000",
+                note: "Bò beefsteak hương vị mới",
+                image: "image/foody-draft-beer-novotel-784-636890615885611681.jpg"
+            }, {
+                id: 9,
+                name: "Tôm hùm đất",
+                price: "80000",
+                note: "Tôm hùm đất sốt bơ tỏi",
+                image: "image/foody-upload-api-foody-mobile-tom-hum-191001161751.jpg"
+            }, {
+                id: 10,
+                name: "Vịt quay",
+                price: "100000",
+                note: "Vịt quay ăn kèm với bánh hỏi, dầu hẹ",
+                image: "image/foody-upload-api-foody-mobile-21-200520161049.jpg"
+            }, {
+                id: 11,
+                name: "Bún chả",
+                price: "70000",
+                note: "Ẩm thực Việt Nam",
+                image: "image/foody-upload-api-foody-mobile-madame-lan-am-thuc-v-180620151547.jpg"
+            }, {
+                id: 12,
+                name: "Há cảo",
+                price: "70000",
+                note: "Các loại há cảo đa dạng",
+                image: "image/foody-upload-api-foody-mobile-the-rachel-cafe-bar--180711092950.jpg"
             }];
             localStorage.setItem("food", JSON.stringify(food));
         }
@@ -856,7 +862,7 @@ box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);">Order now!</button>
         }
         console.log(account);
 
-        // localStorage.setItem("checkLogin", JSON.stringify(checkLogin));
+        //localStorage.setItem("checkLogin", JSON.stringify(checkLogin));
 
 
 
@@ -942,7 +948,7 @@ box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);">Order now!</button>
                 }
             }
             if (checkLogin == -1) {
-                document.getElementById("statusLogin").innerHTML = "sai mật khẩu hoặc tài khoản";
+                document.getElementById("statusLogin").innerHTML = "Sai mật khẩu hoặc tài khoản!";
 
             }
         }
@@ -1068,8 +1074,9 @@ box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);">Order now!</button>
         }
 
         function checkorder(id) {
+
             if (checkLogin == -1) {
-                alert("Vui long dang nhap");
+                alert("Vui lòng đăng nhập");
             } else {
 
 
@@ -1334,6 +1341,7 @@ box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);">Order now!</button>
         }
 
         function Logout() {
+            document.getElementById("statusLogin").style.display = 'none';
             document.getElementById("menu_account_login").style.display = 'none';
             document.getElementById("menu_login_button").style.display = 'block';
             document.getElementById("menu_logout").style.display = 'none';
