@@ -2,7 +2,7 @@
 ## Software Engineering Assignment ##
 Our work is to provide a **online** menu with **real-life** services.
 
-### _web_ and _food website_
+### _web_
 This folder contains the code for implementing the web based application, which is the final products for this project.
 
 ### Requirements
